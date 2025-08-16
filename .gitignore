@@ -2,3 +2,16 @@
 .ipynb_checkpoints/
 doody_key
 doody_key.pub
+*.pem
+*.key
+*.pub
+*.env
+*.secret
+*.credentials
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
