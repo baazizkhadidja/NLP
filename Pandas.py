@@ -63,5 +63,114 @@ ser1+ser2
 # In[ ]:
 
 
+#Pandas DataFrame
+
+
+# In[18]:
+
+
+from numpy.random import randn
+
+
+# In[20]:
+
+
+np.random.seed(101)
+
+
+# In[22]:
+
+
+df = pd.DataFrame(randn(5,4), index=['A','B','C','D','E'], columns = 'W X Y Z'.split())
+df
+
+
+# In[24]:
+
+
+df['W']
+
+
+# In[25]:
+
+
+type(df['W'])
+
+
+# In[26]:
+
+
+df[['W','Z']]
+
+
+# In[27]:
+
+
+df['New'] = df['W']+df['Y']
+
+
+# In[28]:
+
+
+df['New']
+
+
+# In[29]:
+
+
+df
+
+
+# In[35]:
+
+
+df.drop('New', axis = 1, inplace=True)
+
+
+# In[36]:
+
+
+df
+
+
+# In[39]:
+
+
+df.drop('B', inplace=True)
+
+
+# In[40]:
+
+
+df
+
+
+# In[41]:
+
+
+df.loc['A']
+
+
+# In[43]:
+
+
+df.iloc[2]
+
+
+# In[44]:
+
+
+df
+
+
+# In[48]:
+
+
+df.loc[['A','E'],['W','Z']]
+
+
+# In[ ]:
+
+
 
 
