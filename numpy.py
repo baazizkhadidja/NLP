@@ -90,10 +90,102 @@ arr = np.arange(25)
 arr.reshape(5,5)
 
 
-# In[30]:
+# In[35]:
 
 
 ranrr = np.random.randint(0,50,10)
+ranrr.max()
+ranrr.argmax()
+
+
+# In[36]:
+
+
+ranrr
+
+
+# In[37]:
+
+
+ranrr.shape
+
+
+# In[44]:
+
+
+ranrr1 = ranrr.reshape(2,5)
+ranrr1
+
+
+# In[45]:
+
+
+ranrr1.shape
+
+
+# In[46]:
+
+
+ranrr.dtype
+
+
+# In[60]:
+
+
+arr = np.arange(0,11)
+arr
+
+
+# In[62]:
+
+
+slice_arr = arr[0:6] 
+slice_arr
+
+
+# In[64]:
+
+
+slice_arr[:]=99
+slice_arr
+
+
+# In[65]:
+
+
+arr
+
+
+# In[67]:
+
+
+arr_2d = np.array(([5,10,15],[20,25,30],[35,40,45]))
+arr_2d
+
+
+# In[80]:
+
+
+arr_2D = np.arange(50).reshape(5,10)
+arr_2D
+
+
+# In[83]:
+
+
+arr_2D[3:,1:4]
+
+
+# In[85]:
+
+
+arr_2D>35
+
+
+# In[84]:
+
+
+arr_2D[arr_2D<33]
 
 
 # In[ ]:
